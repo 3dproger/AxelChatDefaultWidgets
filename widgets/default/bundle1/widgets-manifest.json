@@ -1,0 +1,39 @@
+{
+    "manifest_version": "1.0",
+    "manifest_type": "WIDGETS",
+    "widgets": [
+        {
+            "name": "Chat",
+            "name_ru": "Чат",
+            "description": "Displays chat messages",
+            "description_ru": "Отображает сообщения чата",
+            "cover": "cover-messages.png",
+            "url": "host/index.html?widget=messages"
+        },
+        {
+            "name": "Selected messages",
+            "name_ru": "Выделенные сообщения",
+            "description": "Shows selected messages. You can select a message via the context menu of the message in the chat in the main window",
+            "description_ru": "Показывает выбранные сообщения. Выбрать сообщение можно через контекстное меню сообщения в чате в главном окне",
+            "url": "host/index.html?widget=selected-messages",
+            "cover": "cover-selected-messages.png"
+        },
+        {
+            "name": "Viewer counter",
+            "name_ru": "Счётчик зрителей",
+            "description": "Shows the number of viewers, both total and by platform",
+            "description_ru": "Показывает количество зрителей, как общее, так и отдельно по платформам",
+            "url": "host/index.html?widget=states",
+            "cover": "cover-viewers.png"
+        }
+    ],
+    "authors": [
+        {
+            "name": "AXEL_K",
+            "bio": "Software developer, primarily in C++",
+            "links": {
+                "GitHub": "https://github.com/3dproger"
+            }
+        }
+    ]
+}

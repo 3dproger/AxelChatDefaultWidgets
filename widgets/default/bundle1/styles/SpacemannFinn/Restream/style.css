@@ -1,0 +1,97 @@
+
+/*New Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*-------------------------Animation--------------------------------------*/
+.messagesListView > div:nth-last-child(2){
+  position: relative;
+  animation-name: slideIn;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  transition-timing-function: cubic-bezier(.75,-0.5,0,1.75);
+}
+
+
+@-webkit-keyframes slideIn{
+  0%   {transform: translateX(100%)}
+  80%  {transform: translateX(-2%)}
+  90%  {transform:translateX(2%)}
+  100% {transform: translateX(0%)}
+}
+/*------------------------------------------------------------*/
+
+
+/*Moves username onto new line*/
+span.authorName::after{
+content: "\A";
+  white-space: pre;
+line-height:2;
+vertical-align:top
+}
+
+/*Reverses the message order*/
+.messagesListView{
+  display:flex;
+  flex-direction: column-reverse
+}
+
+
+/*---------------------------------message styling---------------------------*/
+.message{
+background: #253858;
+  padding: 1rem;
+  margin: 0.2rem 0;
+  width: 280px;
+  box-shadow: 5px 5px 5px rgba(37,56,88,0.4);
+  border-radius: 0px;
+}
+
+.badgeServiceIcon {
+  width: 12px;
+  padding-right: 6px;
+}
+
+.badgeLeft, .badgeRight {
+  display: none;
+}
+
+
+/*This removes the colon I believe?*/
+span.text:nth-of-type(3) {
+  display: none;
+}
+
+
+/*Pushes the actual message text downwards a little*/
+.message :nth-child(n+4) {
+  margin-top: 6px;
+  word-wrap: anywhere;
+}
+
+/*------------------------------------------------------------*/
+
+
+/*Transparent BG and removing scroll wheel*/
+body{
+  background-color: rgba(0,0,0,0);
+overflow-y:hidden;
+overflow-x:hidden;
+}
+
+/*--------------Finally using the fonts to change the name and messages to look nicer-------------------------*/
+.authorName {
+color: #D3D3D3 !important;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+font-size: 15px;
+} 
+
+.text{
+color: #FFF !important;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+margin-top: 5px
+}

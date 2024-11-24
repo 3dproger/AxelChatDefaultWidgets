@@ -1,0 +1,34 @@
+{
+    "manifest_version": "1.0",
+    "manifest_type": "STYLES",
+    "styles": [
+        {
+            "name": "Restream like chat",
+			"version": "1.0",
+            "css_path": "style.css",
+            "cover": "messages-cover.png",
+            "widgets_urls": [
+                "host/index.html?widget=messages"
+            ]
+        },
+        {
+            "name": "Restream like chat",
+			"version": "1.0",
+            "css_path": "style.css",
+            "cover": "selected-messages-cover.png",
+            "widgets_urls": [
+                "host/index.html?widget=selected-messages"
+            ]
+        }
+    ],
+    "authors": [
+        {
+            "name": "SpacemannFinn",
+            "bio": "Teacher, CoffeeCow watcher, Comic Lover",
+            "links": {
+                "GitHub": "https://github.com/SpacemannFinn",
+                "X": "https://twitter.com/Earthbound_M"
+            }
+        }
+    ]
+}
