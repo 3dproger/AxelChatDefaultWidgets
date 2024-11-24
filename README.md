@@ -1,2 +1,2 @@
 # AxelChatDefaultWidgets
-Default widget set for AxelChat
+Set of built-in widgets for AxelChat
